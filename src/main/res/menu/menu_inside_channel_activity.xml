@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.app.veed.veed.inside_channel_activity">
+
+    <item android:id="@+id/add_to_favorites"
+        android:title="favorite"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+       />
+    <item
+        android:id="@+id/menu_item_share"
+        android:showAsAction="always"
+        android:title="Share"
+        android:actionProviderClass=
+            "android.widget.ShareActionProvider" />
+</menu>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#00ffffff"
+    android:paddingTop="100dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp">
+    <android.support.v7.widget.CardView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        app:cardCornerRadius="3dp"
+        android:background="#d6d6d6">
+
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#929292"
+    >
+    <UtilityClasses.StyledTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/view3"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:text="ACCOUNT"
+        app:text_style="normal"
+        android:textColor="#ffffff" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:id="@+id/accountlistView"
+        android:layout_below="@+id/view3"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="15dp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#acacac"
+        android:layout_below="@+id/accountlistView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        android:id="@+id/divider"
+        android:layout_marginTop="10dp" />
+
+    <UtilityClasses.StyledTextView
+        app:text_style="normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/view4"
+        android:layout_alignLeft="@+id/view3"
+        android:layout_alignStart="@+id/view3"
+        android:text="SETTINGS"
+        android:textSize="20dp"
+        android:layout_below="@+id/divider"
+        android:layout_marginTop="10dp"
+        android:textColor="#ffffff" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/settingslistView"
+        android:layout_below="@+id/view4"
+        android:layout_alignStart="@+id/view4"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentLeft="true" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

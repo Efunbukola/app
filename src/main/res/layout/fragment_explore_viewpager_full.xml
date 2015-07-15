@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+    android:layout_marginTop="0dp"
+    android:background="#FFFFFF">
+
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/cover_holder"
+        android:layout_alignParentLeft="true">
+
+        <ProgressBar
+            android:orientation="horizontal"
+            android:id="@+id/pb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="false"
+            android:adjustViewBounds="false"
+            android:layout_centerInParent="true"
+            android:indeterminate="false" />
+
+        <ImageView
+            android:orientation="horizontal"
+            android:id="@+id/cover"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="false"
+            android:adjustViewBounds="false"
+            android:visibility="invisible"
+            android:layout_centerInParent="true"
+            android:minHeight="350dp" />
+
+    <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/play"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:visibility="gone"
+        android:layout_below="@+id/cover_holder"
+        android:background="#FFFFFF" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/video_info_holder"
+        android:background="@drawable/gradient_bg90">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="from"
+            android:id="@+id/from"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentStart="false"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentBottom="false"
+            android:layout_toRightOf="@+id/date"
+            android:layout_alignBottom="@+id/date"
+            android:typeface="sans" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Technology"
+            android:id="@+id/channel"
+            android:textColor="#F44336"
+            android:textSize="16sp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentStart="false"
+            android:autoText="false"
+            android:layout_toRightOf="@+id/from"
+            android:layout_alignBottom="@+id/from"
+            android:layout_marginLeft="5dp"
+            android:typeface="sans" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ffffff"
+            android:paddingRight="5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="false"
+            android:id="@+id/divider"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="5dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="MLS"
+            android:id="@+id/provider"
+            android:textSize="18sp"
+            android:textColor="#F44336"
+            android:textStyle="bold"
+            android:shadowColor="#000000"
+            android:layout_alignParentLeft="false"
+            android:layout_alignLeft="@+id/title"
+            android:layout_above="@+id/title"
+            android:typeface="sans" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Top 5 Goals of 2014 Chips | Year in Review"
+            android:id="@+id/title"
+            android:textSize="25sp"
+            android:maxLines="3"
+            android:typeface="sans"
+            android:textColor="#FFFFFF"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentStart="false"
+            android:layout_alignParentRight="false"
+            android:paddingRight="5dp"
+            android:textStyle="bold"
+            android:layout_alignParentTop="false"
+            android:layout_marginLeft="15dp"
+            android:paddingEnd="15dp"
+            android:layout_above="@+id/from"
+            android:layout_marginBottom="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Microfost today announced the realese of an updated version of its Skype IOS client app..."
+            android:id="@+id/desc"
+            android:layout_alignParentBottom="false"
+            android:layout_alignLeft="@+id/title"
+            android:textColor="#000000"
+            android:maxLines="4"
+            android:layout_below="@+id/provider"
+            android:layout_marginTop="5dp"
+            android:paddingEnd="15dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="1 day ago"
+            android:id="@+id/date"
+            android:textSize="16sp"
+            android:textColor="#ffffff"
+            android:layout_alignParentRight="false"
+            android:layout_alignParentEnd="false"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:typeface="sans" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#76000000"
+        android:id="@+id/tint"
+        android:alpha="0"
+        android:visibility="gone">
+
+    </FrameLayout>
+
+</RelativeLayout>
+

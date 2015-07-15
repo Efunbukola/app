@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Veed 1.0</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_home">Veed</string>
+    <string name="title_activity_inside_channel_activity">Inside Channel</string>
+    <string name="cannot_load_home_activity">Veed is offline. Check network connection and try again :(</string>
+    <string name="sorry_nothing_new">Sorry there\'s nothing new :(</string>
+    <string name="no_network">No network connection :(</string>
+    <string name="no_connection_to_parse">Cannot reach Veed:(</string>
+</resources>

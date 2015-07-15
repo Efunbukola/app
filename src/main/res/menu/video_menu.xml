@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.saboorsalaam.veed10.HomeActivity">
+
+    <item android:id="@+id/add_to_favorites"
+        android:title="Favorite"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        />
+    <item
+        android:id="@+id/menu_item_share"
+        app:showAsAction="always"
+        android:title="Share" />
+
+    <item
+        android:id="@+id/menu_hide"
+        app:showAsAction="never"
+        android:title="I dont want to see this" />
+
+    <item
+        android:id="@+id/menu_copy_share_link"
+        app:showAsAction="never"
+        android:title="Copy share link" />
+</menu>

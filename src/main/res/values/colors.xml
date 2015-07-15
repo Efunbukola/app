@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background_tab_pressed">#6633B5E5</color>
+    <color name="cool_grey">#d07f7f7f</color>
+    <color name="black">#000000</color>
+
+    <color name="material_blue_500">#5677fc</color>
+
+    <color name="primary_dark">#303f9f</color>
+    <color name="ripple">#F06292</color>
+    <color name="accent_pressed">#C2185B</color>
+
+    <color name="primary">#009688</color>
+    <color name="primaryDark">#00796b</color>
+    <color name="accent">#eeff41</color>
+    <color name="accentLight">#F4FF81</color>
+
+
+    <color name="main_color">#0a86ff</color>
+    <color name="secondary_color">#0D47A1</color>
+
+
+</resources>
